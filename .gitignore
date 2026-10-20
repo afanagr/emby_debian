@@ -1,0 +1,28 @@
+# Build and package output
+/build/
+/dist/
+*.plasmoid
+*.kpackage
+*.tar
+*.tar.gz
+*.tar.xz
+*.zip
+
+# QML/JS caches
+*.qmlc
+*.jsc
+
+# Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Operating systems
+.DS_Store
+Thumbs.db
+
+# Python helper scripts
+__pycache__/
+*.py[cod]

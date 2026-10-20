@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  SPDX-FileCopyrightText: 2026 Emby Plasma contributors
+  SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
+      http://www.kde.org/standards/kcfg/1.0/kcfg.xsd" >
+  <kcfgfile name=""/>
+
+  <group name="General">
+    <!-- Connection -->
+    <entry name="serverUrl" type="String">
+      <default></default>
+    </entry>
+    <entry name="apiKey" type="String">
+      <default></default>
+    </entry>
+    <entry name="username" type="String">
+      <default></default>
+    </entry>
+    <entry name="password" type="String">
+      <default></default>
+    </entry>
+    <entry name="deviceName" type="String">
+      <default>Plasma Desktop</default>
+    </entry>
+
+    <!-- Session data, written by the applet after a successful login -->
+    <entry name="accessToken" type="String">
+      <default></default>
+    </entry>
+    <entry name="userId" type="String">
+      <default></default>
+    </entry>
+    <entry name="serverName" type="String">
+      <default></default>
+    </entry>
+    <entry name="deviceId" type="String">
+      <default></default>
+    </entry>
+
+    <!-- Playback and browsing -->
+    <entry name="volume" type="Int">
+      <default>70</default>
+    </entry>
+    <entry name="reportProgress" type="Bool">
+      <default>true</default>
+    </entry>
+    <entry name="itemLimit" type="Int">
+      <default>300</default>
+    </entry>
+    <entry name="imageSize" type="Int">
+      <default>300</default>
+    </entry>
+  </group>
+</kcfg>

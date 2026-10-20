@@ -1,0 +1,20 @@
+{
+    "KPackageStructure": "Plasma/Applet",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "Emby Plasma contributors"
+            }
+        ],
+        "Category": "Multimedia",
+        "Description": "Unofficial Emby client for KDE Plasma: browse a library, play music and video, and control playback",
+        "Description[ru]": "Неофициальный клиент Emby для KDE Plasma: просмотр библиотеки, воспроизведение музыки и видео, управление воспроизведением",
+        "Icon": "/icons/emby.svg",
+        "Id": "org.kde.plasma.emby",
+        "License": "GPL-3.0-or-later",
+        "Name": "Emby Media",
+        "Name[ru]": "Emby",
+        "Version": "1.0.0"
+    },
+    "X-Plasma-API-Minimum-Version": "6.0"
+}

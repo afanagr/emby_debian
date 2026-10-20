@@ -1,0 +1,61 @@
+name: Bug report
+description: Сообщить о проблеме с виджетом
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Спасибо за отчёт! Пожалуйста, приложите логи plasmashell и укажите
+        версии — без них проблему сложно воспроизвести.
+  - type: input
+    id: plasma
+    attributes:
+      label: Версия Plasma и Qt
+      placeholder: "Plasma 6.3.6, Qt 6.8.2"
+    validations:
+      required: true
+  - type: dropdown
+    id: session
+    attributes:
+      label: Сессия
+      options:
+        - Wayland
+        - X11
+    validations:
+      required: true
+  - type: dropdown
+    id: placement
+    attributes:
+      label: Где размещён виджет
+      options:
+        - Рабочий стол
+        - Панель
+        - Другое
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Шаги воспроизведения
+      placeholder: |
+        1. Открыть библиотеку…
+        2. Запустить видео…
+        3. …
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Ожидаемое и фактическое поведение
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Логи
+      description: "`journalctl --user -u plasma-plasmashell.service -n 200 --no-pager`"
+      render: shell
+  - type: input
+    id: version
+    attributes:
+      label: Версия виджета
+      placeholder: "1.0.0"
